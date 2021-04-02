@@ -1,0 +1,50 @@
+.header{
+    position: relative;
+    z-index: 1;
+    //desktop navigations and links
+    &-links{
+        a{
+            text-transform: uppercase;
+            &:not(:last-child){
+                color: $dark-grayish-violet;
+                margin-right: 1rem;
+            }
+            &:hover:not(:last-child){
+                color: $dark-violet;
+            }
+        }
+    }
+
+
+    // mobile navigation and links
+    &-mobile-menu{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: $very-dark-violet;
+        top: 60px;
+        width: 100%;
+        height: 100vh;
+        &::after{
+            content: "";
+            background-image: url('/images/bg-pattern-mobile-nav.svg');
+            background-repeat: no-repeat;
+            background-position: right 20px;
+            background-size: 500px 300px;
+            height: 100%;
+            // width: 100%;
+        }
+        a{
+            color: #fff;
+            text-align: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            text-transform: uppercase;
+            &:last-child:hover{
+             background-color: $very-light-gray;
+                color: $dark-violet;
+            }
+        }
+    }
+}

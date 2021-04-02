@@ -1,0 +1,51 @@
+.feature-section{
+    padding-top: 10em;
+    background-color: $very-light-gray;
+    margin-bottom: 9rem;
+    padding-bottom: 2rem;
+    @include mobile{
+        text-align: center;
+    }
+    hr{
+        width: 200px;
+        color: $dark-grayish-violet;
+        margin-top: 3rem;
+    }
+    h2{
+        padding-top: 2em;
+        font-size: 3rem;
+        color: $dark-violet;
+        padding-bottom: 2em;
+    }
+    .feature-items{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 2em;
+        @include mobile{
+            padding: 0 2rem;
+            grid-template-columns: 1fr;
+           
+        }
+        .feature-item{
+            .feature-image{
+                margin-bottom: 2em;
+            }
+            .feature-title{
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: $dark-violet;
+                margin-bottom: 1em;
+            }
+            .feature-description{
+                font-size: 1.1rem;
+                color: $dark-grayish-violet;
+                line-height: 1.4;
+                @include mobile{
+                    font-size: 1.3rem;
+                }
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="/dist/css/style.min.css">
+  
+  <title>Frontend Mentor | Insure landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main">
+    <header class="header">
+      <nav class="nav container flex flex-jc-sb flex-ai-c container--px  container--py">
+        <a href="#">
+          <img src="/images/logo.svg" alt="insure landing page logo">
+        </a>
+        <a href="#" class="hamburger-image hide-for-desktop" id="hamburger" onclick="openHamburger()">
+          <img src="/images/icon-hamburger.svg" alt="hamburger open icon">
+        </a>
+        <a href="#" class="close-img hide-for-desktop" id="close-hamburger" onclick="closeHamburger()"><img src="/images/icon-close.svg" alt="hamburger close-hamburger"></a>
+
+        <div class="header-links hide-for-mobile">
+                  <a href="#">How we work</a>
+                  <a href="#">Blog</a>
+                  <a href="#">Account</a>
+                  <a href="#" class="header-btn">View plans</a>
+        </div>
+      </nav>
+      <div class="header-mobile-menu has-fade">
+        <a href="#">How we work</a>
+        <a href="#">Blog</a>
+        <a href="#">Account</a>
+        <a href="#" class="btn">View plans </a>
+      </div>
+    </header>
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-left">
+          <span></span>
+          <h1>Humanizing your insurance.</h1>
+          <p>Get your life insurance coverage easier and faster. We blend our expertise
+          and technology to help you find the plan that’s right for you. Ensure you
+          and your loved ones are protected.</p>
+              <a href="#">View plans
+              </a>
+        </div>
+        <div class="hero-image">
+          <img src="/images/image-intro-desktop.jpg" alt="insure landing intro image" class="hide-for-mobile">
+          <img src="/images/image-intro-mobile.jpg" alt="insure landing intro image" class=" hide-for-desktop">
+        </div>
+      </div>
+      
+    </section>
+    <section class="feature-section">
+      <div class="container">
+        <hr class="hide-for-mobile">
+          <h2>We're different</h2>
+
+          <div class="feature-items">
+            <div class="feature-item">
+              <div class="feature-image">
+                <img src="/images/icon-snappy-process.svg" alt="the lighting icon">
+              </div>
+              <div class="feature-title">
+                Snappy Process
+              </div>
+              <div class="feature-description">
+                  Our application process can be completed in minutes, not hours. Don’t get
+                  stuck filling in tedious forms.
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-image">
+                <img src="/images/icon-affordable-prices.svg" alt="the lighting icon">
+              </div>
+              <div class="feature-title">
+                Affordable Prices
+              </div>
+              <div class="feature-description">
+                  We don’t want you worrying about high monthly costs. Our prices may be low,
+                  but we still offer the best coverage possible.
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-image">
+                <img src="/images/icon-people-first.svg" alt="the lighting icon">
+              </div>
+              <div class="feature-title">
+                People First
+              </div>
+              <div class="feature-description">
+                  Our plans aren’t full of conditions and clauses to prevent payouts. We make
+                  sure you’re covered when you need it.
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="card-section">
+      <div class="container">
+        <div class="card-area">
+            <div class="card-header">
+              <h2>Find out more about how we work</h2>
+            </div>
+            <div class="card-btn">
+              <a href="#">How we work</a>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  
+<footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="bottom-logo">
+          <img src="/images/logo.svg" alt="insure page bottom logo">
+        </div>
+        <div class="bottom-links">
+          <a href="#"><img src="/images/icon-facebook.svg" alt="social icon facebook"></a>
+          <a href="#"><img src="/images/icon-twitter.svg" alt="social icon twitter"></a>
+          <a href="#"><img src="/images/icon-pinterest.svg" alt="social icon pinterest"></a>
+          <a href="#"><img src="/images/icon-instagram.svg" alt="social icon instargram"></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+              <div class="footer-items">
+                <div class="footer-header">
+                  <h4>Our company</h4>
+                </div>
+                <div class="footer-link">
+                  
+                    <a href="#">How we work</a>
+                    <a href="#">Why Insure?</a>
+                    <a href="#">View plans<a>
+                    <a href="#">Reviews</a>
+                  
+                </div>
+              </div>
+              <div class="footer-items">
+                <div class="footer-header">
+                  <h4>Help me</h4>
+                </div>
+                <div class="footer-link">
+                  
+                    <a href="#">FAQ</a>
+                    <a href="#"> Terms of use</a>
+                    <a href="#" >Privacy policy</a>
+                    <a href="#" >Cookies</a>
+                  
+                </div>
+              </div>
+              <div class="footer-items">
+                <div class="footer-header">
+                  <h4>Contact</h4>
+                </div>
+                <div class="footer-link">
+                  
+                    <a href="#">Sales</a >
+                    <a href="#">Support</a >
+                    <a href="#">Live chat</a >
+                  
+                </div>
+              </div>
+              <div class="footer-items">
+                <div class="footer-header">
+                  <h4>Others</h4>
+                </div>
+                <div class="footer-link">
+                  
+                    <a href="#">Careers</a >
+                    <a href="#">Press</a >
+                    <a href="#">Licenses</a >
+                  
+                </div>
+              </div>
+      </div>
+    </div>
+</footer>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="/index.js"></script>
+</body>
+</html>
