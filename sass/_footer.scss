@@ -1,18 +1,12 @@
 .footer{
     background-color: $very-light-gray;
-    position: relative;
-    &::before{
-        content: "";
-        position: absolute;
-        background-image: url('/images/bg-pattern-footer-desktop.svg');
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
-        background-position: left top;
-        @include mobile{
-            background-image: url('/images/bg-pattern-footer-mobile.svg');
-        }
+    background-image: url(/images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    @include mobile{
+        background-image: url('/images/bg-pattern-footer-mobile.svg');
     }
+    
     .footer-top{
         display: flex;
         justify-content: space-between;
@@ -30,13 +24,12 @@
         @include mobile{
             margin-top: 2rem;
         }
-        a{
+        svg{
             margin-left: 1em;
-             svg path{
-                transition: fill 150ms ease-in-out;
-            }
-            &:hover svg path{
-                fill:red;
+            cursor: pointer;
+            transition: fill 150ms ease-in-out;
+            &:hover  path{
+                fill: $dark-violet
             }
         }
     }
@@ -54,6 +47,9 @@
             h4{
                 color: $dark-grayish-violet;
                 margin-bottom: 2rem;
+                @include mobile{
+                    margin-top: 2rem;
+                }
             }
         }
         .footer-link{

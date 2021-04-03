@@ -1,20 +1,23 @@
 .hero-section{
     background-color: $dark-violet;
-            position: relative;
+    position: relative;
+    z-index: 1 ;
         &::before{
         content: '';
         background-image: url('/images/bg-pattern-intro-left-desktop.svg');
-        top: 300px;
+        top: 255px;
         position: absolute;
         background-repeat: no-repeat;
         background-position: left bottom;
+        background-size: 159px 356px;
         height: 100%;
-        width: 100%;
-        z-index: 2;
+        width: 50%;
+        z-index: -1;
+    
         @include mobile{
             background-image: url('/images/bg-pattern-intro-left-mobile.svg');
-            background-size: 300px 200px;
-            background-position: left 250px;
+                background-size: 159px 269px;
+                 background-position: left 266px;
         }
 
     }
@@ -28,8 +31,8 @@
     background-position: 60rem -173px;
         height: 100%;
         width: 100%;
+        z-index: -1;
       @include mobile{
-        content: '';
         background-image: url('/images/bg-pattern-intro-right-mobile.svg');
         background-position: 350px 800px;
 
@@ -64,14 +67,6 @@
         @include mobile{
             font-size: 2.5rem;
         }
-    }
-    span{
-        @include desktop{
-        display: inline-block;
-        border-top: 1px solid $very-light-gray;
-        width: 200px;
-        padding-bottom: 3rem;
-            }
     }
     p{
         font-size: 1.25rem;
